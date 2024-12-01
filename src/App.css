@@ -1,0 +1,128 @@
+#root {
+  max-width: 1600px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li{
+  margin: 0 15px;
+}
+.navbar ul > li > .active {
+  color: red;
+}
+.mycard{
+  padding: 15px;
+  box-shadow: 2px 4px 10px rgb(225, 225, 225) ;
+  /* margin: 10px; */
+  width:260px;
+  height: 500px;
+
+ 
+  overflow: hidden;
+}
+.mycard img{
+  width: 240px;
+  padding: 15px 20px;
+ 
+  
+}
+.card-title{
+  font-size: .8rem;
+}
+
+/* -----loader---- */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #ff0000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+  .custom-btn {
+    width:95px;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-section{
+  padding: 1rem 2rem;
+}
+
+.contact-form {
+  padding: 20px;
+  max-width: 600px;
+  display: flex;
+  /* place-items: center; */
+  justify-content: center;
+  margin: auto;
+}
+.contact-form form, .contact-form form input{
+  width:100%
+}
+.contact-form form input{
+  border:1px solid #ddd;
+  height:40px;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+}
+.contact-form form input:focus{
+  border-color: red;
+      border:1px solid red;
+  outline:0 
+}
